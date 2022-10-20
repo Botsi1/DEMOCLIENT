@@ -6,8 +6,8 @@ const { getUsers } = require("../../data/userData");
 const router = Router();
 
 router.get("/", async (req, res) => {
-  let users = await User.findAll({ order: ["id"] });
-  res.send(users);
+  // let users = await User.findAll({ order: ["id"] });
+  res.send("hola mundo");
 });
 
 router.get("/:id", async (req, res) => {
